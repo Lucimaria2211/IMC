@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de imc</title>
+    <!-- inclusão de links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+
+</head>
+
+<body>
+    <header class="col row">
+        <div class="col-12">
+            <h4 style="text-align:left; font-family:sans-serif; font: size 30px; font-style: oblique;"> SEU IMC </h4>
+        </div>
+        <div class="col-12">
+            <h6 style="text-align:right;"> Saúde, Beleza e Bem estar</h6>
+        </div>
+    </header>
+
+    <main class="nav-principal">
+        <div>
+            <h3> Cálculo de Massa corporal (IMC)</h3>
+        </div>
+        <div style="text-align: center; color: #8E7777;">
+            <p>Insira seus dados abaixo e compare seu resultado com nossa tabela.<br>
+                Informe seu peso e altura</p>
+        </div>
+        <form>
+            <input type="number" id="peso" placeholder="Digite seu peso">
+            <input id="altura" type="number" placeholder="Digite sua altura">
+            <button onclick="calcular()"> Calcular</button>
+        </form>
+        <button id="soma">
+            <p id="demo"> </p> <p id="result"> </p>
+        </button>
+
+        <div id="texto">
+            <h6>O IMC (Índice de Massa Corpórea) é uma medida internacional usada para avaliar nosso peso ideal. Seu
+                cálculo é feito dividindo-se o peso pela altura elevada ao quadrado.
+                O resultado diz se estamos dentro de uma faixa saudável ou não. Caso você esteja abaixo ou acima do
+                recomendado, procure ajuda especializada para receber acompanhamento.</h6>
+        </div>
+        <section>
+            <table>
+                <tr>
+                    <th> IMC</th>
+                    <th> CLASSIFICAÇÃO </th>
+                </tr>
+            </table>
+
+            <table>
+
+                <tr>
+                    <td>Menor que 18,5 </td>
+                    <td> Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td>Entre 18,5 e 24,9 </td>
+                    <td> Peso ideal </td>
+                </tr>
+                <tr>
+                    <td>Entre 30,0 e 29,9 </td>
+                    <td> Obesidade I </td>
+                </tr>
+                <tr>
+                    <td>Entre 30,0 e 39,9 </td>
+                    <td> Obesidade II </td>
+                </tr>
+                <tr>
+                    <td>Maior que 40,0 </td>
+                    <td> Obesidade III </td>
+                </tr>
+
+            </table>
+        </section>
+    </main>
+
+    <footer class="container-fluid p-2 text-center text-white fixed-bottom">
+
+        <p> &COPY; 2023 Desenvolvido por Lucimária Arruda</p>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

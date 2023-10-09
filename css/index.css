@@ -1,0 +1,33 @@
+header{
+    background-color:#3E899A;
+    padding: 2em;
+    color: white;
+    
+}
+
+#texto{
+    padding: 3em;
+}
+main{
+    padding: 3em;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 2em;
+}
+
+table { border:1px solid black;
+    width: 100%;
+    text-align: center;
+
+}
+.container-fluid{
+    background-color: #3E899A;
+}
+#soma{
+    background-color: white;
+    max-width: 300px;
+    max-height: 50px;
+    border: 0;
+    margin: 0;
+}
