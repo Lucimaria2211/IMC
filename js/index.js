@@ -1,6 +1,6 @@
 function calcular() {
-    var peso = Number(document.getElementById("peso").value);
-    var altura = Number(document.getElementById("altura").value);
+    var peso = Number(document.getElementById("peso");
+    var altura = Number(document.getElementById("altura"));
 
     var IMC = peso / (altura * altura);
     var resultado = document.getElementById("result");
