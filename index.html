@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body id="body">
     <header class="col row">
         <div class="col-12">
             <h4 style="text-align:left; font-family:sans-serif; font: size 30px; font-style: oblique;"> SEU IMC </h4>
@@ -26,6 +26,7 @@
     </header>
 
     <main class="nav-principal">
+
         <div>
             <h3> Cálculo de Massa corporal (IMC)</h3>
         </div>
@@ -33,14 +34,31 @@
             <p>Insira seus dados abaixo e compare seu resultado com nossa tabela.<br>
                 Informe seu peso e altura</p>
         </div>
-        <form>
-            <input type="number" id="peso" placeholder="Digite seu peso">
-            <input id="altura" type="number" placeholder="Digite sua altura">
-            <button onclick="calcular()"> Calcular</button>
-        </form>
-        <button id="soma">
-            <p id="demo"> </p> <p id="result"> </p>
-        </button>
+        <div class="row" style="text-align: center;">
+            <div class="col-5">
+                <form novalidate>
+                    <input type="number" id="peso" placeholder="Digite seu peso">
+                    <input id="altura" type="number" placeholder="Digite sua altura">
+                    
+                </form>
+                <button onclick="calcular()"> Calcular</button>
+            </div>
+
+            <div class="col-3">
+                <p id="demo"> </p>
+                <p id="result"> </p>
+            </div>
+            <div class="col-4">
+                <button id="btnmulher" type="button" style="background-color:rgb(216, 153, 184);"> Mulher </button>
+                <button id="btnhomem" type="button" style="background-color:rgb(149, 191, 233);"> Homem</button>
+                <img id="mulher" src="img/homem.png">
+            </div>
+        </div>
+
+
+
+
+
 
         <div id="texto">
             <h6>O IMC (Índice de Massa Corpórea) é uma medida internacional usada para avaliar nosso peso ideal. Seu

@@ -1,6 +1,18 @@
+document.getElementById("btnmulher").addEventListener("click", function () {
+    document.getElementById("body").style.backgroundColor = "rgb(216, 153, 184)";
+    document.getElementById("mulher").src = "img/mulher.jpg"
+}, false);
+
+document.getElementById("btnhomem").addEventListener("click", function () {
+     document.getElementById("body").style.backgroundColor = "rgb(149, 191, 233)";
+     document.getElementById("mulher").src = "img/homem.png"
+    
+    }, false);
+
 function calcular() {
-    var peso = Number(document.getElementById("peso");
-    var altura = Number(document.getElementById("altura"));
+    var peso = Number(document.getElementById("peso").value)
+        ;
+    var altura = Number(document.getElementById("altura").value);
 
     var IMC = peso / (altura * altura);
     var resultado = document.getElementById("result");
@@ -17,24 +29,24 @@ function calcular() {
 
     }
 
-    else if (IMC >24.9 && IMC <= 29.9) {
+    else if (IMC > 24.9 && IMC <= 29.9) {
         resultado.innerHTML = "Levemente acima do peso";
 
     }
-    else if (IMC >29.9 && IMC <= 34.9) {
+    else if (IMC > 29.9 && IMC <= 34.9) {
         resultado.innerHTML = "Obesidade grau 1";
 
     }
 
-    else if (IMC >34.9 && IMC <= 39.9) {
+    else if (IMC > 34.9 && IMC <= 39.9) {
         resultado.innerHTML = "Obesidade grau 2";
 
     }
     else {
         resultado.innerHTML = "Obesidade mórbida";
     }
-        
-    
+
+
 
 }
 
